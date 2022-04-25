@@ -1,38 +1,96 @@
+* {
+	font-family: sans-serif;
+}
+body {
+	background: #e1e1e1;
+}
 .App {
-  text-align: center;
+	display: flex;
+	background: #fff;
+	width: 70%;
+	min-height: 500px;
+	margin-top: 5%;
+	border-radius: 1%;
+	flex-direction: column;
+	align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sentenceContainer {
+	background: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+	display: flex;
+	place-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.scrambleSentence {
+	color: #4579bf;
+	font-size: 28px;
+	font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.hintText {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 6px;
 }
+.allCharsContainer {
+	display: block;
+	overflow: auto;
+	padding: 1%;
+}
+.wordContainer {
+	display: inline-flex;
+	width: 100%;
+}
+.inputEle {
+	margin-top: 2px;
+	margin-left: 2px;
+	padding: 1%;
+    padding-right: 0px;
+	background: #eee;
+	border: none;
+	color: #000;
+	height: 17px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.spaceBetween {
+  height: 34px;
+  border: none;
+  background: #dba327;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+.inputEle ,.spaceBetween{pointer-events: none;margin:0px;padding: 0px; 	height: 34px;
+    margin-bottom: 1%; margin-right: 1%;}
+.nextbtnContainer {
+	display: flex;
+	place-content: center;
+}
+.nextBtn {
+	background: #0c7a0c;
+	color: #fff;
+	border: navajowhite;
+	padding: 1%;
+	margin: 1%;
+	width: 60px;
+	border-radius: 3px;
+	font-size: 20px;
+}
+.iswinnerContainer {
+	width: 100%;
+	height: 100%;
+	background: #eee;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	display: flex;
+	place-content: center;
+	align-items: center;
+}
+.iswinnerContainer > p {
+	background: #fff;
+	font-size: 32px;
+	padding: 1%;
+	border-radius: 4px;
+	width: 70%;
 }
